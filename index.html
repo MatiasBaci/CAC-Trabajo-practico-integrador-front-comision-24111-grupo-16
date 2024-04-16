@@ -1,37 +1,93 @@
 <!DOCTYPE html>
+<html lang="es">
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content='width=device-width, initial-scale=1'>
-    <title>My Web Page</title>
+    <title>Movies</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="https://kit.fontawesome.com/c2468f89d3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Nav Bar</h1>
+        <nav class="barra_navegacion">
+            <a href="index.html">
+                <i class="fa-solid fa-star"></i>
+                <span>Movies</span>
+            </a>   
+            <ul>
+                <li><a href="#tendencias">Tendencias</a></li>
+                <li><a href="registrarse.html">Registrarse</a></li>
+                <li class="iniciar_sesion"><a href="iniciar_sesion.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Sección "Películas y series ilimitadas"</h2>
+        <section class="peliculas_y_series">
+            <h1>Películas y series ilimitadas en un solo lugar</h1>
+                <h2>Disfrutá donde quieras.
+                    <br>
+                    Cancelá en cualquier momento.
+                </h2>
+                <button>Registrarse</button>
         </section>
-
-        <section>
-            <h2>Buscador</h2>
+        <section class="buscador">
+            <h1>¿Qué estás buscando para ver?</h1>
+            <form action="procesar_busqueda.py" method="post">
+                <input class="buscador_peliculas" type="text" id="nombre" placeholder="Buscar...">
+                <input class="boton_buscar" type="submit" value="Buscar">
+            </form>
+            <hr>
         </section>
-
-        <section>
-            <h2>Tendencias (grid de películas)</h2>
+        
+        <section id="tendencias">
+            <h2>Las tendencias de hoy</h2>
+            <br> 
+            <div class = "grid-peliculas">
+                <div class="pelicula-item"><img class="img-pelicula" src="https://assets-prd.ignimgs.com/2022/07/21/oppenheimer-poster-1658411601593.jpeg" alt=""></div>
+                <div class="pelicula-item"><img class="img-pelicula" src="https://media.vogue.es/photos/642ef6c2e50e004205338165/master/w_1600,c_limit/Poster%20Barbie.jpg"></div>
+                <div class="pelicula-item"><img class="img-pelicula" src="https://images.ctfassets.net/4cd45et68cgf/4HXqHLksKw8jSBeULjWCk0/fdfa876a080b0bfdc91695a387ebc113/es-ES_sots_main_theatrical_vertical_27x40_cmyk_pre_1.jpg?w=1200" alt=""></div>
+                <div class="pelicula-item"><img class="img-pelicula" src="https://static.posters.cz/image/750webp/7182.webp" alt=""></div>
+                <div class="pelicula-item"><img class="img-pelicula" src="https://m.media-amazon.com/images/I/51pZb9txREL._AC_UF894,1000_QL80_.jpg" alt="pelicula"></div>
+                <div class="pelicula-item"><img class="img-pelicula" src="https://hips.hearstapps.com/hmg-prod/images/poster-joker-2-1567010576.jpg" alt=""></div>
+                <div class="pelicula-item"><img class="img-pelicula" src="https://purodiseno.lat/wp-content/uploads/2023/07/WONKA-576x1024.jpg" alt=""></div>
+                <div class="pelicula-item"><img class="img-pelicula" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghNPkw-LqQe_uY8JfXz4v1YGfaPMc2yF2SQCZxAc5EVbapwgV8Jol_a3By4_oCv_yIcmwOOY9GtBi3s-IZZ9t80kukoGUF3LIDoM8dRXw523E7TPzCB9pj-6rlN7GLu1iqwnA_0xcwAG9AFd2Edwjsd_zfno9HFGwN1-PR-CBq0paRH3HoWN3RS2A-zw/s900/vecinogrunon-1.jpg" alt=""></div>
+                <div class="pelicula-item"><img class="img-pelicula" src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-20-posters-de-peliculas-mas-creativos/cisne-negro/7055592-1-esl-ES/CISNE-NEGRO.jpg" alt=""></div>
+            </div>
         </section>
-
-        <section>
+        <br>
+        
+        <br>
+        <section class="aclamadas">
+            <hr>
             <h2>Las más aclamadas</h2>
+            <div class="contenedor-aclamadas">
+                <div class="aclamada-item"><img class="img-aclamada" src="https://detodoconbeth.wordpress.com/wp-content/uploads/2015/12/gone-with-the-wind-poster-gone-with-the-wind-33266928-1667-2500.jpg?w=800" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://m.media-amazon.com/images/I/71i6L1vZjiL._AC_SL1058_.jpg" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://http2.mlstatic.com/D_NQ_NP_848952-MLA40257478873_122019-O.webp" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://es.web.img2.acsta.net/medias/nmedia/18/88/91/08/20306579.jpg" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9i-IZA1lUOmcyYCqTy0RwCe6xrlo1YNgUJC2yBRb-dA&s" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLs9fsG8eX3WgASTqvvwJ0PyGZyCbmSRnIYc55hEpakg&s" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://i.pinimg.com/474x/dc/bb/5a/dcbb5ad4e37efb60165df227ae9465bf.jpg" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://hips.hearstapps.com/hmg-prod/images/gabz-godfather-1646152137.png" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://i.blogs.es/682e23/81174579c578a791d10e4566f2732eac/450_1000.jpg" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://pics.filmaffinity.com/Shrek-903764423-large.jpg" alt=""></div>
+                <div class="aclamada-item"><img class="img-aclamada" src="https://musicart.xboxlive.com/7/2d411200-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt=""></div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <h3>Barra Footer</h3>
-
-        <h3>Flecha de ir para arriba</h3>
+        <nav class="barra_navegacion_footer">
+            <ul>
+                <li><a href="index.html">Términos y condiciones</a></li>
+                <li><a href="index.html">Preguntas frecuentes</a></li>
+                <li><a href="index.html">Ayuda</a></li>
+                <li><a href="index.html">Administrador Películas</a></li>
+            </ul>
+            <a href="index.html"> <i class="fa-solid fa-arrow-up"> </i></a>
+        </nav>
     </footer>
 </body>
 </html>
