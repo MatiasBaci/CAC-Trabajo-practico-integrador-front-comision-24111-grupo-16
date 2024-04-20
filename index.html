@@ -1,37 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content='width=device-width, initial-scale=1'>
-    <title>My Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/netflix-icon.png">
+    <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
+    <title>TpGrupal</title>
 </head>
 <body>
-    <header>
-        <h1>Nav Bar</h1>
+
+    <header class="header">
+        
+        <nav class="navegacion">
+            <a href="#" class="anclaLogo">
+                <i class="fa-solid fa-film"></i>
+                <span> TP-MOVIES</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"><a href="#" class="linkNav">Tendencias</a></li>
+                <li class="listaItem"><a href="#" class="linkNav">Registrarse</a></li>
+                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+
+
     </header>
-
+    
     <main>
-        <section>
-            <h2>Sección "Películas y series ilimitadas"</h2>
+        <section class="presentacion">
+
+            <h1 class="titulo1"> 
+                Peliculas y series ilimitadas 
+                <br><br>
+                en un solo lugar
+            </h1>
+            <h2 class="titulo2">
+                Disfruta donde quieras. 
+                <br><br>
+                Cancela en cualquier momento.
+            </h2>
+            <br>
+            <a class="btnRegistrarse" href="./pages/registrarse.html">Registrate</a>
+
         </section>
 
-        <section>
-            <h2>Buscador</h2>
+        <section class="buscador">
+            <h2 class="tituloBuscador">
+                ¿Qué estas buscando para ver?
+            </h2>
+            <form class="buscadorPeliculas">
+                <input class="inputBuscador" type="text" placeholder="Buscar..." id="buscar" name="buscar">
+                <input class="btnBuscador" type="submit" value="Buscar">
+            </form>
         </section>
 
-        <section>
-            <h2>Tendencias (grid de películas)</h2>
-        </section>
+        <hr>
 
-        <section>
-            <h2>Las más aclamadas</h2>
-        </section>
+        <section  class="tendencias">
+            <h3 class="tituloTendencias">Las tendencias de hoy</h2>
+            <div class="grid-container">
+                <!-- .grid-item$*10{item $} -->
+                <div class="grid-item1">item 1</div>
+               <div class="grid-item2">item 2</div>
+                <div class="grid-item3">item 3</div>
+                <div class="grid-item4">item 4</div>
+                <div class="grid-item5">item 5</div>
+                <div class="grid-item6">item 6</div>
+                <div class="grid-item7">item 7</div>
+                <div class="grid-item8">item 8</div>
+                <div class="grid-item9">item 9</div>
+                <div class="grid-item10">item 10</div>
+
+
+            </div>
+
+        </div>
+
     </main>
 
-    <footer>
-        <h3>Barra Footer</h3>
+    <footer>    
 
-        <h3>Flecha de ir para arriba</h3>
     </footer>
+
 </body>
 </html>
