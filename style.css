@@ -162,11 +162,6 @@ body{
     }
 }
 
-.tituloBuscador{
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
 .buscador{
     background-color: #181419;
     color: rgb(255, 255, 255);
@@ -175,6 +170,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.tituloBuscador{
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .buscadorPeliculas{
