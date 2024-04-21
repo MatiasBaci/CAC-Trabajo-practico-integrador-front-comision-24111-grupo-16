@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body{
+    height: 100%;
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.barra_navegacion{
+    margin-top: 1%;
+    background-color: black;
+}
+
+.barra_navegacion a{
+    font-size: 110%;
+    text-decoration: none;
+    color: white;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+main{
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/008/143/680/non_2x/gaming-icons-gaming-illustration-on-black-background-free-vector.jpg);
+    background-size:cover;
+}
+
+.registro, .inicio_sesion{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    background-color: rgb(102, 102, 102);
+    width: 35%;
+    height: 200%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px rgb(73, 73, 73);    
+}
+
+.registro h1, .inicio_sesion h1{
+    margin-bottom: 5%;
+    font-size: 200%;
+}
+
+form{
+    margin: 5%;
+    width: 70%;
+}
+
+.form-control{
+    margin-bottom: 4%;
+}
+
+.terminos_y_cond{
+    display: flex;
+    justify-content:flex-start;
+    margin: 2%;
+}
+
+.terminos_y_cond label{
+    margin-left: 2%;
+}
+
+.boton{
+    height: 50px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 100%;
+    background-color: rgb(60, 109, 215);
+    color: white;
+    border-radius: 5%;
+    border: 1px solid rgb(60, 109, 215);
+    transition: background 0.2s linear;
+}
+
+.boton:hover{
+    background-color: rgb(100, 136, 213);
+    border-color: rgb(100, 136, 213);
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px rgb(73, 73, 73);
+}
+
+.boton_registrarse{
+    display: block;
+    text-decoration: none;
+    color:white;
+    margin-top: 1%;
+}
+
+.boton_registrarse:hover{
+    text-decoration: underline;
+}
+

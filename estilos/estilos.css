@@ -50,8 +50,16 @@ ul{
 }
 
 li{
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
     text-decoration: none;
+}
+
+.boton-nav:hover{
+    background-color: rgb(237, 121, 121);
+    border: 1px solid rgb(237, 121, 121);
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px rgb(94, 94, 94);
 }
 
 .iniciar_sesion{
@@ -141,6 +149,11 @@ li{
     font-weight: 500;
 }
 
+.boton_buscar:hover{
+    background-color:rgb(237, 121, 121);
+    color: white;
+}
+
 .buscador hr{
     border: 1px solid indianred;
     width: 90%;
@@ -200,25 +213,8 @@ li{
     border-radius: 20px;
 }
 
-.fa-solid fa-arrow-up{
+.boton-up .fa-solid fa-arrow-up{
     font-size: 30px; 
-    color: white; 
-    position: fixed;
-}
-
-.inicio_sesion{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-}
-
-.inicio_sesion form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    color: white;
+    position:fixed;
 }
