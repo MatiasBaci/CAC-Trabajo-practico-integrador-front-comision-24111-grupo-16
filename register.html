@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <script src="https://kit.fontawesome.com/c2468f89d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    
+    <!-- Add the animate.css library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="contenedor header">
+        <nav class="barraprincipal">
+            <a class="animate__animated animate__pulse animate__infinite ala titulo" href="index.html">
+                <i class=" fa-solid fa-gamepad tituloicono"></i>
+                <span class="titulonombre">JuegoTeca</span>   
+            </a>
+            <nav class="ala barrabuscador">
+                <form class="buscador">
+                <input class="escribirbuscador" type="search" placeholder="Busqueda de Juegos..." >
+                <button class="botonbuscador" type="submit">Search</button>
+                </form>
+            </nav>
+            <ul class="navegacion">
+                <li class="lista num1"><a class="vinculo" href="#">Zona Pelis</a></li>
+                <li class="lista num2"><a class="vinculo terror animate__animated animate__shakeX animate__infinite" href="ZonaTerror.html">Zona Terror</a></li>
+                <li class="lista num2"><a class="vinculo" href="register.html">Registrarse</a></li>
+                <li class="lista num2"><a class="vinculo" href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    </header>
+    <main>
+        <div class="registro">            
+            <form action="" method="post">
+                <h1>Registro</h1>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                    <input type="text" class="form-control" placeholder="Apellido" required>
+                    <input type="email" class="form-control" placeholder="Email" required>
+                    <input type="password" class="form-control" placeholder="Contraseña" required minlength="8" 
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,}" title="Debe contener al menos 8 caracteres, incluyendo un número, una letra minúscula, una letra mayúscula, y un caracter especial (por ejemplo @, #, &).">
+
+                    <input type="date" class="form-control" name="birthdaytime" required>
+                    <select class="form-control" name="pais">
+                        <option value="value1" selected>Argentina</option>
+                        <option value="value2">Bolivia</option>
+                        <option value="value3">Brasil</option>
+                        <option value="value4">Chile</option>
+                        <option value="value5">Colombia</option>
+                        <option value="value6">Ecuador</option>
+                        <option value="value7">Paraguay</option>
+                        <option value="value8">Perú</option>
+                        <option value="value9">Uruguay</option>
+                        <option value="value10">Venezuela</option>
+                    </select>
+                    <div class="terminos_y_cond">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto términos y condiciones</label>
+                    </div>
+                    <button type="submit" class="boton">Registrarse</button>
+                    <a class="boton_registrarse" href="login.html">Iniciar Sesión</a>
+                </div>
+             </form>
+        </div>
+    </main>  
+    <footer id="piecitopagina" class="piecitopagina">
+        <div class="cajafinal">
+            <ul class="barrafinal">
+                <li class="listafinal num5"><a class="vinculofinal" href="#">
+                    <table class="iconos-redes">
+                        <td><a href="https://www.twitter.com/home"><i class="fa-brands fa-twitter fa-bounce fa-2xl" style="color: #0a95ff;"></i></a></td>
+                        <td><a href="https://www.xbox.com/"><i class="fa-brands fa-xbox fa-fade fa-2xl" style="color: #15b300;"></i></a></td>
+                        <td><a href="https://www.steampowered.com/"><i class="fa-brands fa-steam fa-spin fa-2xl" style="color: #0f3981;"></i></a></td>
+                    </table>
+                </a></li>
+                <li class="listafinal num6"><a class="vinculofinal" href="#">Contacto</a></li>
+                <li class="listafinal num7"><a class="vinculofinal" href="#">Juegos</a></li>
+                <li class="listafinal num8"><a class="vinculofinal" href="#">Trabajo</a></li>
+            </ul>
+            
+        </div>
+        
+        <a href="#" ><i class="flecha-arriba fa-solid fa-arrow-up fa-2xl" style="color: #a03748;"></i></a>
+    </footer>  
+</body>
+</html>

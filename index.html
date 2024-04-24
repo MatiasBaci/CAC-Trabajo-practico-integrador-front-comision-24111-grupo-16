@@ -1,141 +1,130 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta name="viewport" content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="styles/index.css">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Add the fontoawesome css -->
+        <link rel="stylesheet" type="text/css" media="screen" 
+        href="CSS/fontawesome-free-6.5.1-web/css/all.css">
+        
+        <link rel="stylesheet" 
+        href="CSS/common.css">
+        <link rel="stylesheet" type="text/css" media="screen" 
+        href="CSS/index.css">
+        
+        <!-- Add the Animate on Scroll library -->
+        <link rel="stylesheet" 
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        
+        <!-- Add the animate.css library -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <!-- Add the animate.css library -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Add the fontoawesome icon kit -->
+        <script src="https://kit.fontawesome.com/18c46e055d.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <!--HEADER-->
+        <header class="contenedor header">
+            <nav class="barraprincipal">
+                <a class="animate__animated animate__pulse animate__infinite ala titulo" href="index.html">
+                    <i class=" fa-solid fa-gamepad tituloicono"></i>
+                    <span class="titulonombre">JuegoTeca</span>   
+                </a>
+                <nav class="ala barrabuscador">
+                    <form class="buscador">
+                    <input class="escribirbuscador" type="search" placeholder="Busqueda de Juegos..." >
+                    <button class="botonbuscador" type="submit">Search</button>
+                    </form>
+                </nav>
+                <ul class="navegacion">
+                    <li class="lista num1"><a class="vinculo" href="#">Zona Pelis</a></li>
+                    <li class="lista num2"><a class="vinculo terror animate__animated animate__shakeX animate__infinite" href="ZonaTerror.html">Zona Terror</a></li>
+                    <li class="lista num2"><a class="vinculo" href="register.html">Registrarse</a></li>
+                    <li class="lista num2"><a class="vinculo" href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <title>Pagina de Juegos</title>
-</head>
-<body>
-    <h1>XBox Gym Pass</h1>
-    <!-- Your content goes here -->
-
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#juegosDeTerror">Juegos De Terror</a></li>
-        </ul>
-    </nav>
-
-    <article class="catalog-container">
-        <h2>Videojuegos de Terror</h2>
-        <article class="content-container" id="Series">
-
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/cover.soma.713x944.2014-04-22.7.jpg" alt="SOMA">
+        <!--CONTENEDORJUEGOS-->
+        <main>
+            <article class="contenedorjuegos">
+                <div class="cajajuegos">
+                    <span class="cajajuegostitulo">Juegos de todo tipo y colores</span>
+                    <span class="cajajuegosinfo">Registrese a la pagina web de juegos mas retroactivamente moderna existente hasta la fecha!</span>
+                    <a href="register.html" class="cajajuegosregistro vinculo">Registrarse</a>
                 </div>
-                <div class="movie_box">
-                    <h3>SOMA</h3>
+            </article>
+            <hr>
+
+            <!--CONTENEDORLISTAJUEGOS-->
+            <section class="contenedorlistajuegos">
+                <div class="cajalistajuegos">
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/TombRaider.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/TLoU.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/Tetris.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/StreetFighter2.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/RE5.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/Minecraft.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/P3Reload.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/RE4Remake.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/FinalFantasy.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/GTAV.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/KungFu.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/FF7Remake.jpg" alt="juego"></a></div>
                 </div>
-            </a>
+            </section>
+            <hr>
+
+            <!--SECCION JUEGOS VARIOS-->
+            <section class="seccionjuegos">
+                <span class="secciontitulo">Juegos Varios</span>
+                <div class="seccioncatalogo">
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/Batltlefield1.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/Contra.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/DoubleDragon.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/FinalFantasy.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/GTAV.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/GTAVC.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/MarioBros.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/Ninja2.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/SleepingDogs.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/Tetris.jpg" alt="juego1" loading="lazy"></div>
+                </div>
+            </section>
+        </main>
+        <hr>
+
+        <!--PIE DE PAGINA-->
+        <footer id="piecitopagina" class="piecitopagina">
+            <div class="cajafinal">
+                <ul class="barrafinal">
+                    <li class="listafinal num5"><a class="vinculofinal" href="#">
+                        <table class="iconos-redes">
+                            <td><a href="https://www.twitter.com/home"><i class="fa-brands fa-twitter fa-bounce fa-2xl" style="color: #0a95ff;"></i></a></td>
+                            <td><a href="https://www.xbox.com/"><i class="fa-brands fa-xbox fa-fade fa-2xl" style="color: #15b300;"></i></a></td>
+                            <td><a href="https://www.steampowered.com/"><i class="fa-brands fa-steam fa-spin fa-2xl" style="color: #0f3981;"></i></a></td>
+                        </table>
+                    </a></li>
+                    <li class="listafinal num6"><a class="vinculofinal" href="#">Contacto</a></li>
+                    <li class="listafinal num7"><a class="vinculofinal" href="#">Juegos</a></li>
+                    <li class="listafinal num8"><a class="vinculofinal" href="#">Trabajo</a></li>
+                </ul>
+                
+            </div>
             
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/mothered_1830720_library_600x900.jpg" alt="MOTHERED">
-                </div>
-                <div class="movie_box">
-                    <h3>MOTHERED</h3>
-                </div>
-            </a>
-            
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/organ_quarter_605830_library_600x900.jpg" alt="Organ Quarter">
-                </div>
-                <div class="movie_box">
-                    <h3>Organ Quarter</h3>
-                </div>
-            </a>
-            
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/half_life_alyx_546560_library_600x900.jpg" alt="Half-Life: Alyx">
-                </div>
-                <div class="movie_box">
-                    <h3>Half-Life: Alyx</h3>
-                </div>
-            </a>
-
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/hellblade_414340_library_600x900.jpg" alt="Hellblade: Senua's Sacrifice">
-                </div>
-                <div class="movie_box">
-                    <h3>Hellblade: Senua's Sacrifice</h3>
-                </div>
-            </a>
-            
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/inscryption_1092790_library_600x900.jpg" alt="Inscyption">
-                </div>
-                <div class="movie_box">
-                    <h3>Inscyption</h3>
-                </div>
-            </a>
-
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/buddy_simulator_1984_1269950_library_600x900.jpg" alt="Buddy Simulator 1984">
-                </div>
-                <div class="movie_box">
-                    <h3>Buddy Simulator 1984</h3>
-                </div>
-            </a>
-            
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/observer_1386900_library_600x900.jpg" alt="Observer">
-                </div>
-                <div class="movie_box">
-                    <h3>Observer</h3>
-                </div>
-            </a>
-
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/doki_doki_1388880_library_600x900.jpg" alt="Doki Doki Literature Club Plus">
-                </div>
-                <div class="movie_box">
-                    <h3>Doki Doki Literature Club Plus</h3>
-                </div>
-            </a>
-            
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/prey_480490_library_600x900.jpg" alt="PREY">
-                </div>
-                <div class="movie_box">
-                    <h3>PREY</h3>
-                </div>
-            </a>
-
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/resident_evil_2_1168280_library_600x900.jpg" alt="Resident Evil 2">
-                </div>
-                <div class="movie_box">
-                    <h3>Resident Evil 2</h3>
-                </div>
-            </a>
-            
-            <a href="/videojuego.html" class="animate__animated animate__fadeInUp">
-                <div class="movie_img_overlay">
-                    <img src="assets/covers/dead_space_17470_library_600x900.jpg" alt="Dead Space">
-                </div>
-                <div class="movie_box">
-                    <h3>Dead Space</h3>
-                </div>
-            </a>
-            
-        </article>
-    </article>
-
-</body>
+            <a href="#" ><i class="flecha-arriba fa-solid fa-arrow-up fa-2xl" style="color: #a03748;"></i></a>
+        </footer>
+        
+        <!--SCRIPT DE AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!--FIN SCRIPT DE AOS-->
+    </body>
 </html>

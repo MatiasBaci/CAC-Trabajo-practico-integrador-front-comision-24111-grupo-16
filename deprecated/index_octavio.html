@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/style_octavio.css">
+    <link rel="icon" href="./img/netflix-icon.png">
+
+    <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
+    <title>TpGrupal</title>
+</head>
+<body>
+
+    <header class="header">
+        
+        <nav class="navegacion">
+            <a href="#" class="anclaLogo">
+                <i class="fa-solid fa-film"></i>
+                <span> TP-MOVIES</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"><a href="#" class="linkNav">Tendencias</a></li>
+                <li class="listaItem"><a href="#" class="linkNav">Registrarse</a></li>
+                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    
+    <main>
+        <section class="presentacion">
+
+            <h1 class="titulo1"> 
+                Peliculas y series ilimitadas 
+                <br><br>
+                en un solo lugar
+            </h1>
+            <h2 class="titulo2">
+                Disfruta donde quieras. 
+                <br><br>
+                Cancela en cualquier momento.
+            </h2>
+            <br>
+            <a class="btnRegistrarse" href="./pages/register">Registrate</a>
+
+        </section>
+
+        <!-- animate__backInUp -->
+        <section class="buscador">
+
+            <h2 class="tituloBuscador animate__animated animate__backInUp animate__delay-1s">
+                ¿Qué estas buscando para ver?
+            </h2>
+            <form class="buscadorPeliculas animate__animated animate__backInUp animate__delay-1s">
+                <input class="inputBuscador" type="text" placeholder="Buscar..." id="buscar" name="buscar">
+                <input class="btnBuscador" type="submit" value="Buscar">
+            </form>
+
+        </section>
+
+        <hr>
+
+        <section  class="tendencias">
+            <h3 class="tituloTendencias">Las tendencias de hoy</h2>
+            <div class="grid-container">
+                <!-- .grid-item$*10{item $} -->
+                <div class="grid-item1">item 1</div>
+               <div class="grid-item2">item 2</div>
+                <div class="grid-item3">item 3</div>
+                <div class="grid-item4">item 4</div>
+                <div class="grid-item5">item 5</div>
+                <div class="grid-item6">item 6</div>
+                <div class="grid-item7">item 7</div>
+                <div class="grid-item8">item 8</div>
+                <div class="grid-item9">item 9</div>
+                <div class="grid-item10">item 10</div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <nav class="navegacion">
+            
+            <ul class="listaNav">
+                <li class="listaItem"><a href="#" class="linkNav">Terminos y condiciones</a></li>
+                <li class="listaItem"><a href="#" class="linkNav">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+            
+        </nav>    
+        <a href="#main" class="flechaArriba">
+            <img src="./img/flecha-hacia-arriba.png" alt="ir flecha arriba">
+        </a>
+    </footer>
+    
+</body>
+</html>
