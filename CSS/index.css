@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*CONTENEDORJUEGOS*/
+
+.contenedorjuegos {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(../assets/Imagenes/Mandos.webp);
+    background-size: cover;
+}
+
+.cajajuegos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bold;
+
+    .cajajuegostitulo {
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        padding: 10px;
+    }
+    
+    .cajajuegosinfo {
+        font-size: 1em;
+        color: aliceblue;
+        margin-bottom: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+.cajajuegosregistro {
+    font-weight: normal;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(160, 55, 72);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: auto;
+    text-shadow: none;
+
+    transition: ease-in-out 0.5s;
+    &:hover {
+        padding: 10px 25px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}
+
+/*CONTENEDORLISTAJUEGOS*/
+
+.contenedorlistajuegos {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+.cajalistajuegos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.listajuegos {
+    margin: 10px 10px;
+}
+
+.juegoimg {
+    width: 300px;
+    height: 450px;
+    border-radius: 5%;
+
+    transition: all .3s ease-in-out;
+    &:hover {
+        transform: scale(0.9);
+        box-shadow: 0 0 20px rgba(252, 19, 248, 0.632);
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .juegoimg {
+        width: 150px;
+        height: 220px;
+    }
+}
+
+/*SECCION JUEGOS VARIOS*/
+
+.seccionjuegos {
+    background-color: black;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.secciontitulo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px 0px;
+    font-size: 30px;
+}
+
+.seccioncatalogo {
+    display: flex; 
+    overflow-x: scroll ;
+    overflow-y: hidden;
+    background-image: url("../assets/Imagenes/Juegos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .juegorandom {
+        border-radius: 5%;
+        transition: all .3s ease-in-out;
+        &:hover {
+            transform: scale(0.9);
+            box-shadow: 0 0 20px rgba(252, 19, 248, 0.632);
+        }
+    }
+}
+
+.juegos {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.juegorandom {
+    width: 170px;
+    height: 220px;
+}
