@@ -183,7 +183,6 @@ a.titulo {
     z-index: 99;
     padding: 15px;
     border-radius: 100%;
-    font-size: 18px;
 
     transition: transform 0.3s ease-in-out;
     &:hover {

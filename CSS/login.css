@@ -3,6 +3,10 @@ html, body{
     background-color: black;
 }
 
+body {
+    line-height: normal !important;
+}
+
 *{
     margin: 0;
     padding: 0;
