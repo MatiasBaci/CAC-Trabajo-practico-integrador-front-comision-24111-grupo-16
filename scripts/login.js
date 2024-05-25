@@ -3,13 +3,6 @@ const btnInicio = document.getElementById("boton-submit-login");
 
 console.log(formulario);
 
-formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (validarFormulario()) {
-        formulario.submit();
-    }
-});
-
 function validarFormulario() {
     let validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
     let email = document.getElementById("email");
