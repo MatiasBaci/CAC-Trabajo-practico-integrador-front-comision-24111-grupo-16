@@ -1,104 +1,131 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./img/netflix-icon.png">
-
-    <script src="https://kit.fontawesome.com/fae5ac15d7.js" crossorigin="anonymous"></script>
-    <title>TpGrupal</title>
-</head>
-<body>
-
-    <header class="header">
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>JuegoTeca</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/Imagenes/entypo--game-controller.png">
         
-        <nav class="navegacion">
-            <a href="#" class="anclaLogo">
-                <i class="fa-solid fa-film"></i>
-                <span> TP-MOVIES</span>
-            </a>
-            <ul class="listaNav">
-                <li class="listaItem"><a href="#" class="linkNav">Tendencias</a></li>
-                <li class="listaItem"><a href="#" class="linkNav">Registrarse</a></li>
-                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Iniciar Sesion</a></li>
-            </ul>
-        </nav>
+        <!-- Add the fontoawesome css -->
+        <link rel="stylesheet" type="text/css" media="screen" 
+        href="CSS/fontawesome-free-6.5.1-web/css/all.css">
+        
+        <link rel="stylesheet" 
+        href="CSS/common.css">
+        <link rel="stylesheet" type="text/css" media="screen" 
+        href="CSS/index.css">
+        
+        <!-- Add the Animate on Scroll library -->
+        <link rel="stylesheet" 
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        
+        <!-- Add the animate.css library -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+        <!-- Add the fontoawesome icon kit -->
+        <script src="https://kit.fontawesome.com/18c46e055d.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <!--HEADER-->
+        <header class="contenedor header">
+            <nav class="barraprincipal">
+                <a class="animate__animated animate__pulse animate__infinite ala titulo" href="index.html">
+                    <i class=" fa-solid fa-gamepad tituloicono"></i>
+                    <span class="titulonombre">JuegoTeca</span>   
+                </a>
+                <nav class="ala barrabuscador">
+                    <form class="buscador">
+                    <input class="escribirbuscador" type="search" placeholder="Busqueda de Juegos..." >
+                    <button class="botonbuscador" type="submit">Search</button>
+                    </form>
+                </nav>
+                <ul class="navegacion">
+                    <li class="lista num1"><a class="vinculo" href="#">Zona Pelis</a></li>
+                    <li class="lista num2"><a class="vinculo terror animate__animated animate__shakeX animate__infinite" href="ZonaTerror.html">Zona Terror</a></li>
+                    <li class="lista num2"><a class="vinculo" href="register.html">Registrarse</a></li>
+                    <li class="lista num2"><a class="vinculo" href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    </header>
-    
-    <main>
-        <section class="presentacion">
+        <!--CONTENEDORJUEGOS-->
+        <main>
+            <article class="contenedorjuegos">
+                <div class="cajajuegos">
+                    <span class="cajajuegostitulo">Juegos de todo tipo y colores</span>
+                    <span class="cajajuegosinfo">Registrese a la pagina web de juegos mas retroactivamente moderna existente hasta la fecha!</span>
+                    <a href="register.html" class="cajajuegosregistro vinculo">Registrarse</a>
+                </div>
+            </article>
+            <hr>
 
-            <h1 class="titulo1"> 
-                Peliculas y series ilimitadas 
-                <br><br>
-                en un solo lugar
-            </h1>
-            <h2 class="titulo2">
-                Disfruta donde quieras. 
-                <br><br>
-                Cancela en cualquier momento.
-            </h2>
-            <br>
-            <a class="btnRegistrarse" href="./pages/registrarse.html">Registrate</a>
+            <!--CONTENEDORLISTAJUEGOS-->
+            <section class="contenedorlistajuegos">
+                <div class="cajalistajuegos">
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/TombRaider.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/TLoU.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/Tetris.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/StreetFighter2.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/RE5.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/Minecraft.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/P3Reload.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/RE4Remake.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/FinalFantasy.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/GTAV.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/KungFu.jpg" alt="juego"></a></div>
+                    <div class="listajuegos" data-aos="zoom-in" data-aos-duration="300"><a href="videojuego.html" class="jueguitos"><img class="juegoimg" src="assets/Imagenes/Juegos/FF7Remake.jpg" alt="juego"></a></div>
+                </div>
+            </section>
+            <hr>
 
-        </section>
-
-        <!-- animate__backInUp -->
-        <section class="buscador">
-
-            <h2 class="tituloBuscador animate__animated animate__backInUp animate__delay-1s">
-                ¿Qué estas buscando para ver?
-            </h2>
-            <form class="buscadorPeliculas animate__animated animate__backInUp animate__delay-1s">
-                <input class="inputBuscador" type="text" placeholder="Buscar..." id="buscar" name="buscar">
-                <input class="btnBuscador" type="submit" value="Buscar">
-            </form>
-
-        </section>
-
+            <!--SECCION JUEGOS VARIOS-->
+            <section class="seccionjuegos">
+                <span class="secciontitulo">Juegos Varios</span>
+                <div class="seccioncatalogo">
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/Batltlefield1.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/Contra.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/DoubleDragon.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/FinalFantasy.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/GTAV.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/GTAVC.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/MarioBros.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/Ninja2.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/SleepingDogs.jpg" alt="juego1" loading="lazy"></div>
+                    <div class="juegos"><img class="juegorandom" src="assets/Imagenes/Juegos/Tetris.jpg" alt="juego1" loading="lazy"></div>
+                </div>
+            </section>
+        </main>
         <hr>
 
-        <section  class="tendencias">
-            <h3 class="tituloTendencias">Las tendencias de hoy</h2>
-            <div class="grid-container">
-                <!-- .grid-item$*10{item $} -->
-                <div class="grid-item1">item 1</div>
-               <div class="grid-item2">item 2</div>
-                <div class="grid-item3">item 3</div>
-                <div class="grid-item4">item 4</div>
-                <div class="grid-item5">item 5</div>
-                <div class="grid-item6">item 6</div>
-                <div class="grid-item7">item 7</div>
-                <div class="grid-item8">item 8</div>
-                <div class="grid-item9">item 9</div>
-                <div class="grid-item10">item 10</div>
-
-
+        <!--PIE DE PAGINA-->
+        <footer id="piecitopagina" class="piecitopagina">
+            <div class="cajafinal">
+                <ul class="barrafinal">
+                    <li class="listafinal num5"><a class="vinculofinal" href="#">
+                        <table class="iconos-redes">
+                            <td><a href="https://www.twitter.com/home"><i class="fa-brands fa-twitter fa-bounce fa-2xl" style="color: #0a95ff;"></i></a></td>
+                            <td><a href="https://www.xbox.com/"><i class="fa-brands fa-xbox fa-fade fa-2xl" style="color: #15b300;"></i></a></td>
+                            <td><a href="https://www.steampowered.com/"><i class="fa-brands fa-steam fa-spin fa-2xl" style="color: #0f3981;"></i></a></td>
+                        </table>
+                    </a></li>
+                    <li class="listafinal num6"><a class="vinculofinal" href="#">Contacto</a></li>
+                    <li class="listafinal num7"><a class="vinculofinal" href="#">Juegos</a></li>
+                    <li class="listafinal num8"><a class="vinculofinal" href="#">Trabajo</a></li>
+                </ul>
+                
             </div>
-
-        </div>
-
-    </main>
-
-    <footer class="footer">
-        <nav class="navegacion">
             
-            <ul class="listaNav">
-                <li class="listaItem"><a href="#" class="linkNav">Terminos y condiciones</a></li>
-                <li class="listaItem"><a href="#" class="linkNav">Preguntas frecuentes</a></li>
-                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Ayuda</a></li>
-                <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
-            </ul>
-            
-        </nav>    
-        <a href="#main" class="flechaArriba">
-            <img src="./img/flecha-hacia-arriba.png" alt="ir flecha arriba">
-        </a>
-    </footer>
-    
-</body>
+            <a href="#" ><i class="flecha-arriba fa-solid fa-arrow-up fa-2xl" style="color: #a03748;"></i></a>
+        </footer>
+        
+        <!--SCRIPT DE AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!--FIN SCRIPT DE AOS-->
+    </body>
 </html>
