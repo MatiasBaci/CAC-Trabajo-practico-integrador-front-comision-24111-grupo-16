@@ -37,19 +37,21 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="inicio_sesion">            
-            <form action="" method="post">
+            <form action="" method="post" id="formulario-login">
                 <h1>Iniciar Sesión</h1>
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email" required>
-                    <input type="password" class="form-control" placeholder="Constraseña" required>
-                    <button type="submit" class="boton">Iniciar Sesión</button>
+                    <input id= "email" type="email" class="form-control" placeholder="Email" required>
+                    <input id="password" type="password" class="form-control" placeholder="Constraseña" required>
+                    <button type="submit" class="boton" id="boton-submit-login">Iniciar Sesión</button>
                     <a class="boton_registrarse" href="register.html">Registrarse</a>
                 </div>
              </form>
         </div>
     </main>
+
     <footer id="piecitopagina" class="piecitopagina">
         <div class="cajafinal">
             <ul class="barrafinal">
@@ -69,5 +71,6 @@
         
         <a href="#" ><i class="flecha-arriba fa-solid fa-arrow-up fa-2xl" style="color: #a03748;"></i></a>
     </footer>
+    <script src="scripts\login.js"></script>
 </body>
 </html>
