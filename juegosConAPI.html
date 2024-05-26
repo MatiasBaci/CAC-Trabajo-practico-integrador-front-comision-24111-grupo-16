@@ -14,6 +14,14 @@
     <!-- Add the AOS library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Add the header.html -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+    </script>  -->
+
     <title>Pagina de Juegos</title>
 </head>
 <body>
@@ -31,20 +39,19 @@
                 </form>
             </nav>
             <ul class="navegacion">
-                <li class="lista num1"><a class="vinculo" href="juegosConAPI.html">Zona Pelis</a></li>
+                <li class="lista num1"><a class="vinculo" href="juegosConAPI.html">Zona API</a></li>
                 <li class="lista num2"><a class="vinculo terror animate__animated animate__shakeX animate__infinite" href="ZonaTerror.html">Zona Terror</a></li>
                 <li class="lista num2"><a class="vinculo" href="register.html">Registrarse</a></li>
                 <li class="lista num2"><a class="vinculo" href="login.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
+    <!-- <div id="header"></div> -->
 
     <!--CONTENIDO-->
 
     <article class="catalog-container">
         <h2 class="title-container">Videojuegos obtenidos con API</h2>
-
-        <button id="botonLlamadaAPI">LLAMAR API</button>
 
         <article class="content-container" id="contenedor-juegos">
 

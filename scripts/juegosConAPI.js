@@ -1,14 +1,8 @@
-/* const botonLlamadaAPI = document.getElementById('botonLlamadaAPI');
-botonLlamadaAPI.addEventListener('click', llamarAPI); */
-
 document.addEventListener('DOMContentLoaded', (event) => {
   llamarAPI();
 });
 
 function llamarAPI() {
-    /* const apiJuegos = fetch('https://www.freetogame.com/api/games')
-        .then(response => response.json())
-        .then(data => dibujarJuegos(data)); */
     const url = 'https://free-to-play-games-database.p.rapidapi.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=pc';
     const options = {
         method: 'GET',
@@ -26,8 +20,6 @@ function llamarAPI() {
 function dibujarJuegos(json) {
 
     const juegos = json.map(juego => juegoToHTML(juego));
-    /* const contenedorJuegos = document.getElementById('contenedor-juegos');
-    contenedorJuegos.innerHTML = juegos.join(''); */
     document.getElementById('contenedor-juegos').innerHTML = juegos.join('');
 }
 
