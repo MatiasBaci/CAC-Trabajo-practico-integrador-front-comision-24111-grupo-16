@@ -1,17 +1,34 @@
-const botonLlamadaAPI = document.getElementById('botonLlamadaAPI');
-botonLlamadaAPI.addEventListener('click', llamarAPI);
+/* const botonLlamadaAPI = document.getElementById('botonLlamadaAPI');
+botonLlamadaAPI.addEventListener('click', llamarAPI); */
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  llamarAPI();
+});
 
 function llamarAPI() {
-    const apiJuegos = fetch('https://www.freetogame.com/api/games')
+    /* const apiJuegos = fetch('https://www.freetogame.com/api/games')
         .then(response => response.json())
-        .then(data => dibujarJuegos(data));
+        .then(data => dibujarJuegos(data)); */
+    const url = 'https://free-to-play-games-database.p.rapidapi.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=pc';
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '40eae54f70msh55c3f47dc79bab7p1f1bbejsnff6441f703f2',
+            'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
+        }
+    };
+    fetch(url, options)
+    .then(res => res.json())
+    .then(data => dibujarJuegos(data))
+    .catch(err => console.error('Error fetching data:', err));
 }
 
 function dibujarJuegos(json) {
 
     const juegos = json.map(juego => juegoToHTML(juego));
-    const contenedorJuegos = document.getElementById('contenedor-juegos');
-    contenedorJuegos.innerHTML = juegos.join('');
+    /* const contenedorJuegos = document.getElementById('contenedor-juegos');
+    contenedorJuegos.innerHTML = juegos.join(''); */
+    document.getElementById('contenedor-juegos').innerHTML = juegos.join('');
 }
 
 function juegoToHTML(juego) {
