@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-  llamarAPI();
+  cargarJuegos();
 });
 
-function llamarAPI() {
+function cargarJuegos() {
     const url = 'https://free-to-play-games-database.p.rapidapi.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=pc';
     const options = {
         method: 'GET',

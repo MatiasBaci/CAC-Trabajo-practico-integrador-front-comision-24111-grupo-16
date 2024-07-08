@@ -1,0 +1,8 @@
+td, th {
+    color: white !important;
+}
+
+#usuariosTable {
+    /* TODO: ajustar la vista en dispositivos móviles, quizas hay que ver .container */
+    width: 100%;
+}
