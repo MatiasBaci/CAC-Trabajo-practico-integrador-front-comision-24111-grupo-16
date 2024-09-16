@@ -4,4 +4,4 @@ Para visualizar la página web usar el siguiente link:
 
 https://matiasbaci.github.io/CAC-Trabajo-practico-integrador-front-comision-24111-grupo-16/src/main/webapp/
 
-Para usar la funcionalidad de registro y login de usuarios (como se ve en el video de dmeostración) se corrió en servidor Tomcat con base de datos en MySQL.
+Para usar la funcionalidad de registro y login de usuarios (como se ve aquí https://youtu.be/N8jFIV43SDE) se corrió en servidor Tomcat con base de datos en MySQL.
